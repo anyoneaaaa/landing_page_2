@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.left{
+    width: 40%;height: 100%;
+    background: white;
+    position: relative;
+}
+
+.right{
+    width: 60%;height: 100%;
+    background: blue;
+}
+
+.rtop{
+    width: 100%;height: 50%;
+    display: flex;
+}
+
+.top_left{
+    width: 55%;height: 100%;
+    background-image: url(images/pexels-jessica-lewis-🦋-thepaintedsquare-820905.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.top_right{
+    width: 45%;height: 100%;
+    background-image: url(images/org2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rbottom{
+    width: 100%;height: 50%;
+    background-image: url(images/org.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    width: 100%;
+    padding: 2vh 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_right{
+    display:flex ;
+}
+
+.nav_right a{
+    margin-right: 1vw;
+    margin-left: 1vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.nav_right img{
+    height: 2vw;
+}
+
+.left .text_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.left .text_center h1{
+    font-size: 4vw;
+    
+}
+
+.left .text_center p{
+    opacity: .6;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.left .text_center a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 0.1vw solid black ;
+    padding-bottom: 0.2vw;
+    font-size: 1vw;
+    opacity: .6;
+}
+
+@media(max-width:500px){
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
